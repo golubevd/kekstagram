@@ -567,6 +567,7 @@ input[type=radio]:checked + .upload-effect-label .upload-effect-preview {
   text-align: center;
 }
 
+
 .picture img {
   height: 182px;
   margin-bottom: -34px;
@@ -692,15 +693,9 @@ input[type=radio]:checked + .upload-effect-label .upload-effect-preview {
 }
 
 @media only screen and (max-width: 999px){
-  .picture:nth-child(1) {
-    margin-right: 600px;
-  }
-  .picture:nth-child(2) {
-    margin-right: 600px;
-  }
-  .picture:nth-child(3) {
-    margin-right: 600px;
-  }
+.picture:nth-of-type(2n-1):nth-of-type(-n+6) {
+  margin-right: 600px;
+}
 }
 
 .gallery-overlay {
